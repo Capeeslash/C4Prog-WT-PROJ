@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="flex flex-col min-h-screen">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../Assets/css/site.css">
+
 </head>
-<body>
+<body class="flex flex-col flex-grow bg-sunset">
+<header class="bg-redwood text-white p-4">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="font-bold text-xl">Sample Projects</h1>
+        <nav>
+            <ul class="flex text-black rounded">
+                <li><a href="../index.html" class="text-black border-2 border-black bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Home</a></li>
+                <li><a href="../Contact%20page/contact.html" class="text-black border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Contact</a></li>
+                <li><a href="../About%20page/about.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">About</a></li>
+                <li><a href="../Resume%20page/resume.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Resume</a></li>
+                <li><a href="../Projects%20page/projects.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Projects</a></li>
+                <li><a href="../Sample%20Projects/mywork.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Sample Projects</a></li>
+
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="flex-grow container mx-auto p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Contact Card -->
+        <a href="../Contact%20page/contact.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+            <h2 class="text-xl font-bold mb-2">Contact</h2>
+            <p>Get in touch with me for any inquiries or collaborations.</p>
+        </a>
+        <!-- About Card -->
+        <a href="../About%20page/about.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+            <h2 class="text-xl font-bold mb-2">About</h2>
+            <p>Learn more about me and my background.</p>
+        </a>
+        <!-- Resume Card -->
+        <a href="../Resume%20page/resume.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+            <h2 class="text-xl font-bold mb-2">Resume</h2>
+            <p>See my professional experience and skills.</p>
+        </a>
+        <!-- Projects Card -->
+        <a href="../Projects%20page/projects.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+            <h2 class="text-xl font-bold mb-2">Projects</h2>
+            <p>Learn more about my projects past and present!.</p>
+        </a>
+        <!-- Sample Projects Card -->
+        <a href="../Sample%20Projects/mywork.html" class=" border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white ">
+            <h2 class="text-xl font-bold mb-2">Sample Projects</h2>
+            <p>Check out my latest projects.</p>
+        </a>
+
+
+    </div>
+</main>
+<footer class="bg-redwood text-white p-4 text-center">
+    <p>© 2023 Kento Pollard. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
