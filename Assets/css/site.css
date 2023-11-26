@@ -700,6 +700,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(8 127 140 / var(--tw-bg-opacity));
 }
+.bg-teal {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 127 140 / var(--tw-bg-opacity));
+}
 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
