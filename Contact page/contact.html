@@ -5,61 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="../Assets/css/site.css">
-
 </head>
-<body class="flex flex-col flex-grow bg-sunset">
-<header class="bg-redwood text-white p-4">
+<body class="flex flex-col flex-grow bg-white">
+<header class="bg-black text-white p-4">
     <div class="container mx-auto flex justify-between items-center p-4">
         <h1 class="font-bold text-xl">Contacts</h1>
         <nav>
             <ul class="flex text-black rounded">
-                <li><a href="../index.html" class="text-black border-2 border-black bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Home</a></li>
-                <li><a href="../Contact%20page/contact.html" class="text-black border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Contact</a></li>
-                <li><a href="../About%20page/about.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">About</a></li>
-                <li><a href="../Resume%20page/resume.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Resume</a></li>
-                <li><a href="../Projects%20page/projects.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Projects</a></li>
-                <li><a href="../Sample%20Projects/mywork.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Sample Projects</a></li>
-
-
+                <li><a href="../index.html" class="text-black border-2 border-black bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Home</a></li>
+                <li><a href="../Contact%20page/contact.html" class="text-black border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Contact</a></li>
+                <li><a href="../About%20page/about.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">About</a></li>
+                <li><a href="../Resume%20page/resume.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Resume</a></li>
+                <li><a href="../Projects%20page/projects.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Projects</a></li>
+                <li><a href="../Sample%20Projects/mywork.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Sample Projects</a></li>
             </ul>
         </nav>
     </div>
 </header>
-
 <main class="flex-grow container mx-auto p-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Contact Card -->
-        <a href="../Contact%20page/contact.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
-            <h2 class="text-xl font-bold mb-2">Contact</h2>
-            <p>Get in touch with me for any inquiries or collaborations.</p>
-        </a>
-        <!-- About Card -->
-        <a href="../About%20page/about.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
-            <h2 class="text-xl font-bold mb-2">About</h2>
-            <p>Learn more about me and my background.</p>
-        </a>
-        <!-- Resume Card -->
-        <a href="../Resume%20page/resume.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
-            <h2 class="text-xl font-bold mb-2">Resume</h2>
-            <p>See my professional experience and skills.</p>
-        </a>
-        <!-- Projects Card -->
-        <a href="../Projects%20page/projects.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
-            <h2 class="text-xl font-bold mb-2">Projects</h2>
-            <p>Learn more about my projects past and present!.</p>
-        </a>
-        <!-- Sample Projects Card -->
-        <a href="../Sample%20Projects/mywork.html" class=" border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white ">
-            <h2 class="text-xl font-bold mb-2">Sample Projects</h2>
-            <p>Check out my latest projects.</p>
-        </a>
-
-
+    <div class="flex-grow overflow-x-auto mt-6 w-full">
+        <table class=" flex-grow mx-auto w-auto table-auto border-collapse bg-white shadow-md rounded-lg border border-black">
+            <thead class="bg-platinum">
+            <tr>
+                <th class="py-4 text-center text-black font-semibold"> Name </th>
+                <th class="py-4 text-center text-black font-semibold"> Role </th>
+                <th class="py-4 text-center text-black font-semibold"> Company </th>
+                <th class="py-4 text-center text-black font-semibold"> Number </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="px-4 hover:bg-teal hover:text-white">
+                <td class="px-8 py-2 text-center"> Marcus Johnson </td>
+                <td class="px-8 py-2 text-center"> IT Project Manager </td>
+                <td class="px-8 py-2 text-center"> TechWave Solutions </td>
+                <td class="px-8 py-2 text-center"> 123-456-7890 </td>
+            </tr>
+            <tr class="px-4 hover:bg-teal hover:text-white">
+                <td class="px-8 py-2 text-center"> Leo Garcia </td>
+                <td class="px-8 py-2 text-center"> Network Security Analyst </td>
+                <td class="px-8 py-2 text-center">  SecureNet Systems </td>
+                <td class="px-8 py-2 text-center"> 0412 345 678 </td>
+            </tr>
+            <tr class="px-4 hover:bg-teal hover:text-white">
+                <td class="px-8 py-2 text-center"> Aisha Patel </td>
+                <td class="px-8 py-2 text-center"> Database Administrator </td>
+                <td class="px-8 py-2 text-center"> DataCore Analytics </td>
+                <td class="px-8 py-2 text-center"> +1-555-0303 </td>
+            </tr>
+            <tr class="px-4 hover:bg-teal hover:text-white">
+                <td class="px-8 py-2 text-center"> Emily Nguyen </td>
+                <td class="px-8 py-2 text-center"> Software Developer </td>
+                <td class="px-8 py-2 text-center"> InnoTech Dynamics </td>
+                <td class="px-8 py-2 text-center"> +1-555-0909 </td>
+            </tr>
+            <!-- Additional Contacts -->
+            <tr class="px-4 hover:bg-teal hover:text-white">
+                <td class="px-8 py-2 text-center"> Ryan Kim </td>
+                <td class="px-8 py-2 text-center"> Cloud Engineer </td>
+                <td class="px-8 py-2 text-center"> CloudFront Innovations </td>
+                <td class="px-8 py-2 text-center"> +1-555-0606 </td>
+            </tr>
+            <tr class="px-4 hover:bg-teal hover:text-white">
+                <td class="px-8 py-2 text-center"> Sofia Martinez </td>
+                <td class="px-8 py-2 text-center"> Cybersecurity Specialist </td>
+                <td class="px-8 py-2 text-center"> SecureTech Advisors </td>
+                <td class="px-8 py-2 text-center"> +1-555-0707 </td>
+            </tr>
+            <tr class="px-4 hover:bg-teal hover:text-white">
+                <td class="px-8 py-2 text-center"> Jordan Brown </td>
+                <td class="px-8 py-2 text-center"> IT Support Technician </td>
+                <td class="px-8 py-2 text-center"> TechAssist Solutions </td>
+                <td class="px-8 py-2 text-center"> +1-555-0808 </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </main>
-<footer class="bg-redwood text-white p-4 text-center">
+<footer class="bg-black text-white p-4 text-center">
     <p>© 2023 Kento Pollard. All rights reserved.</p>
 </footer>
-
 </body>
 </html>

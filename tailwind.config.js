@@ -13,10 +13,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'redwood': '#000000',
-        'mint': '#087F8C',
-        'dark-cyan': '#DADDE0',
-        'sunset': '#FFFFFF',
+        'teal': '#087F8C',
+        'platinum': '#DADDE0',
       },
     },
   },

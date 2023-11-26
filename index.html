@@ -1,65 +1,78 @@
 <!DOCTYPE html>
+<!-- flex applies the flex layout, allowing all elements within to be laid out in a line, flex-col just aligns the
+child components to stack vertically, min-h screen sets the minimum height of the element (in this case the whole file)
+to the height of the screen-->
 <html lang="en" class="flex flex-col min-h-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <!-- Reference to the site.css file-->
     <link rel="stylesheet" href="./Assets/css/site.css">
-
 </head>
-<body class="flex flex-col flex-grow bg-sunset">
-<header class="bg-redwood text-white p-4">
+<!-- flex-grow allows <body> to expand and fill available space within the container-->
+<body class="flex flex-col flex-grow bg-white">
+<!-- p-4 is the padding for the header elements-->
+<header class="bg-black text-white p-4">
+    <!-- container applies a max-width to this element, based on the screen and the default value in site.css, mx-auto
+    centres the <div> element within the parent header element, flex - see above, justify-between distributes all child
+    elements within <div> with space between them, items centre aligns all child elements in the centre-->
     <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- very self-explanatory-->
         <h1 class="font-bold text-xl">Home Page</h1>
         <nav>
+            <!-- flex displays the elements horizontally, rounded adjusts the border of each element and text is the colour-->
             <ul class="flex text-black rounded">
-                <li><a href="index.html" class="text-black border-2 border-black bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Home</a></li>
-                <li><a href="./Contact%20page/contact.html" class="text-black border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Contact</a></li>
-                <li><a href="./About%20page/about.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">About</a></li>
-                <li><a href="./Resume%20page/resume.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Resume</a></li>
-                <li><a href="./Projects%20page/projects.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Projects</a></li>
-                <li><a href="./Sample%20Projects/mywork.html" class="border-2 border-black ml-3 bg-dark-cyan px-3 py-2 rounded hover:bg-mint hover:text-white">Sample Projects</a></li>
-
-
+                <!-- links added here, border is self-explanatory, px-3 and py-2 add padding so adjust as needed
+                 hover: changes the colour of the element when the cursor is over the card -->
+                <li><a href="index.html" class="text-black border-2 border-black bg-platinum px-3 py-2 hover:bg-teal hover:text-white">Home</a></li>
+                <li><a href="./Contact%20page/contact.html" class="text-black border-2 border-black ml-3 bg-platinum px-3 py-2 hover:bg-teal hover:text-white">Contact</a></li>
+                <!-- ml-3 creates a margin of 3 units to the left side-->
+                <li><a href="./About%20page/about.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 hover:bg-teal hover:text-white">About</a></li>
+                <li><a href="./Resume%20page/resume.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 hover:bg-teal hover:text-white">Resume</a></li>
+                <li><a href="./Projects%20page/projects.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 hover:bg-teal hover:text-white">Projects</a></li>
+                <li><a href="./Sample%20Projects/mywork.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 hover:bg-teal hover:text-white">Sample Projects</a></li>
             </ul>
         </nav>
     </div>
 </header>
-
+<!-- flex-grow allows main elements to expand and occupy any available space, container sets max width based on screen size-->
 <main class="flex-grow container mx-auto p-4">
+    <!-- grid applies grid layout to the cards, grid-col-1 gives the grid one column, md:grid-cols-2 sets 2 columns on
+     medium screens, and lg:grid-cols-3 sets 3 columns on large screens, gap-6 sets a gap of 6 units between grid items-->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Contact Card -->
-        <a href="./Contact%20page/contact.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+        <!-- Contact Card:
+         card here is a custom class set in site.css, for the rest of the info check the <nav> components from before -->
+        <a href="./Contact%20page/contact.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
+            <!-- text-xl sets the text size, mb-2 sets a margin on the bottom side of 2 units-->
             <h2 class="text-xl font-bold mb-2">Contact</h2>
             <p>Get in touch with me for any inquiries or collaborations.</p>
         </a>
         <!-- About Card -->
-        <a href="./About%20page/about.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+        <a href="./About%20page/about.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
             <h2 class="text-xl font-bold mb-2">About</h2>
             <p>Learn more about me and my background.</p>
         </a>
         <!-- Resume Card -->
-        <a href="./Resume%20page/resume.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+        <a href="./Resume%20page/resume.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
             <h2 class="text-xl font-bold mb-2">Resume</h2>
             <p>See my professional experience and skills.</p>
         </a>
         <!-- Projects Card -->
-        <a href="./Projects%20page/projects.html" class="border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white">
+        <a href="./Projects%20page/projects.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
             <h2 class="text-xl font-bold mb-2">Projects</h2>
             <p>Learn more about my projects past and present!.</p>
         </a>
         <!-- Sample Projects Card -->
-        <a href="./Sample%20Projects/mywork.html" class=" border-2 border-black card bg-dark-cyan p-4 rounded-lg shadow-md hover:bg-mint hover:text-white ">
+        <a href="./Sample%20Projects/mywork.html" class=" border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white ">
             <h2 class="text-xl font-bold mb-2">Sample Projects</h2>
             <p>Check out my latest projects.</p>
         </a>
-
-
     </div>
 </main>
-<footer class="bg-redwood text-white p-4 text-center">
+<!-- pretty self-explanatory -->
+<footer class="bg-black text-white p-4 text-center">
     <p>© 2023 Kento Pollard. All rights reserved.</p>
 </footer>
-
 </body>
 </html>
