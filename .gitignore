@@ -1,0 +1,14 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
+#added by Kentop 23/11/2023
+.idea
+.idea/
+.idea/*
+.idea/**
+
+#ignore node modules
+node_modules
