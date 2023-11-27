@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="../Assets/css/site.css">
-
 </head>
 <body class="flex flex-col flex-grow bg-white">
 <header class="bg-black text-white p-4">
@@ -19,47 +18,67 @@
                 <li><a href="../Resume%20page/resume.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Resume</a></li>
                 <li><a href="../Projects%20page/projects.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Projects</a></li>
                 <li><a href="../Sample%20Projects/mywork.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Sample Projects</a></li>
-
-
             </ul>
         </nav>
     </div>
 </header>
-
 <main class="flex-grow container mx-auto p-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Contact Card -->
-        <a href="../Contact%20page/contact.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
-            <h2 class="text-xl font-bold mb-2">Contact</h2>
-            <p>Get in touch with me for any inquiries or collaborations.</p>
-        </a>
-        <!-- About Card -->
-        <a href="../About%20page/about.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
-            <h2 class="text-xl font-bold mb-2">About</h2>
-            <p>Learn more about me and my background.</p>
-        </a>
-        <!-- Resume Card -->
-        <a href="../Resume%20page/resume.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
-            <h2 class="text-xl font-bold mb-2">Resume</h2>
-            <p>See my professional experience and skills.</p>
-        </a>
-        <!-- Projects Card -->
-        <a href="../Projects%20page/projects.html" class="border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white">
-            <h2 class="text-xl font-bold mb-2">Projects</h2>
-            <p>Learn more about my projects past and present!.</p>
-        </a>
-        <!-- Sample Projects Card -->
-        <a href="../Sample%20Projects/mywork.html" class=" border-2 border-black card bg-platinum p-4 rounded-lg shadow-md hover:bg-teal hover:text-white ">
-            <h2 class="text-xl font-bold mb-2">Sample Projects</h2>
-            <p>Check out my latest projects.</p>
-        </a>
-
-
+    <h2 class="text-2xl font-bold text-center mb-8">Sample Projects</h2>
+    <div id="projects">
+        <!-- Project 1 -->
+        <div class="project-item bg-platinum rounded border border-black shadow-sm mb-4 cursor-pointer transition duration-300 hover:shadow-md">
+            <div class="toggle-header p-4 w-full text-left font-semibold bg-gradient-custom bg-gradient-custom-hover rounded flex justify-between items-center">
+                Company Database on SQL
+            </div>
+            <div class="project-content hidden p-6 bg-platinum rounded">
+                <p>A comprehensive SQL database designed to manage critical company data. This project involved creating
+                    complex SQL queries and designing a relational database schema to efficiently store and retrieve
+                    information about employees, managers, branches, suppliers, clients, and sales transactions.</p>
+                <img src="../Assets/img/sql-stuff.jpg" alt="Company Database Screenshot" class="w-full mx-auto h-auto"/>
+                <p>Link not available due to privacy policy</p>
+            </div>
+        </div>
+        <div class="project-item bg-platinum rounded border border-black shadow-sm mb-4 cursor-pointer transition duration-300 hover:shadow-md">
+            <div class="toggle-header p-4 w-full text-left font-semibold bg-gradient-custom bg-gradient-custom-hover rounded flex justify-between items-center">
+                Wordle Clone
+            </div>
+            <div class="project-content hidden p-6 bg-platinum rounded">
+                <p>An engaging clone of the popular Wordle game built with Python. This project showcases my skills in
+                    developing interactive applications and implementing game logic. The game presents users with daily
+                    word challenges and offers hints based on their guesses.</p>
+                <img src="../Assets/img/wordle-clone.png" alt="Wordle Clone Screenshot" class="w-full mx-auto h-auto"/>
+                <a href="https://github.com/Capeeslash/Wordle" class="text-black hover:text-teal" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-item bg-platinum rounded border border-black shadow-sm mb-4 cursor-pointer transition duration-300 hover:shadow-md">
+            <div class="toggle-header p-4 w-full text-left font-semibold bg-gradient-custom bg-gradient-custom-hover rounded flex justify-between items-center">
+                Exercise Selection App
+            </div>
+            <div class="project-content hidden p-6 bg-platinum rounded">
+                <p>A user-friendly exercise selection app developed using .NET MAUI. The app allows users to customize
+                    their workout routines, track their progress, and explore a variety of exercise regimes. It features
+                    an intuitive interface and data-driven recommendations.</p>
+                <img src="../Assets/img/app.jpg" alt="Exercise App Screenshot" class="project-image"/>
+                <a href="https://github.com/Capeeslash/Tafe-Exercise-App" class="text-black hover:text-teal" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-item bg-platinum rounded border border-black shadow-sm mb-4 cursor-pointer transition duration-300 hover:shadow-md">
+            <div class="toggle-header p-4 w-full text-left font-semibold bg-gradient-custom bg-gradient-custom-hover rounded flex justify-between items-center">
+                Lottery Number Guessing Game
+            </div>
+            <div class="project-content hidden p-6 bg-platinum rounded">
+                <p>A fun and interactive lottery number guessing game written in C#. This project demonstrates my
+                    ability to implement random number generation and statistical analysis. Players can guess numbers,
+                    view their win/loss statistics, and compare against historical data.</p>
+                <img src="../Assets/img/lottery.png" alt="Lottery Game Screenshot" class="w-full mx-auto h-auto"/>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-black hover:text-teal" target="_blank">View on GitHub</a>
+            </div>
+        </div>
     </div>
 </main>
 <footer class="bg-black text-white p-4 text-center">
     <p>© 2023 Kento Pollard. All rights reserved.</p>
 </footer>
-
+<script src="../Assets/js/toggle.js"></script>
 </body>
 </html>
