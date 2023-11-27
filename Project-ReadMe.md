@@ -1,3 +1,7 @@
+This is a Portfolio website showcasing basic use of html, css, and Javascript. 
+
+Colour scheme for the website is shown below
+
 | Name       | RGB            | HEX      |
 |------------|----------------|----------|
 | black      | 0, 0, 0        | #000000 |
