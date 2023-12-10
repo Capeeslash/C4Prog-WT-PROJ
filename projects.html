@@ -4,85 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="../Assets/css/site.css">
+    <link rel="stylesheet" href="Assets/css/site.css">
+    <link rel="stylesheet" href="Assets/css/mystyle.css">
 </head>
 <body class="flex flex-col flex-grow bg-white">
 <header class="bg-black text-white p-4">
-    <div class="container mx-auto flex justify-between items-center p-4">
+    <section class="container mx-auto flex justify-between items-center p-4">
         <h1 class="font-bold text-xl">Projects</h1>
-        <nav>
-            <ul class="flex text-black rounded">
-                <li><a href="../index.html" class="text-black border-2 border-black bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Home</a></li>
-                <li><a href="../Contact%20page/contact.html" class="text-black border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Contact</a></li>
-                <li><a href="../About%20page/about.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">About</a></li>
-                <li><a href="../Resume%20page/resume.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Resume</a></li>
-                <li><a href="../Projects%20page/projects.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Projects</a></li>
-                <li><a href="../Sample%20Projects/mywork.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Sample Projects</a></li>
+        <nav class="nav">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list hidden md:flex text-black rounded">
+                <li><a href="index.html" class="text-black border-2 border-black bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Home</a></li>
+                <li><a href="contact.html" class="text-black border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Contact</a></li>
+                <li><a href="about.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">About</a></li>
+                <li><a href="resume.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Resume</a></li>
+                <li><a href="projects.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Projects</a></li>
+                <li><a href="mywork.html" class="border-2 border-black ml-3 bg-platinum px-3 py-2 rounded hover:bg-teal hover:text-white">Sample Projects</a></li>
             </ul>
         </nav>
-    </div>
+    </section>
 </header>
 <main class="flex-grow container mx-auto p-4">
     <h2 class="text-2xl font-bold mt-12 mb-8 text-center text-teal bg-platinum rounded-lg p-2">Past Projects</h2>
 
     <div class="grid md:grid-cols-2 gap-10">
         <!-- Company Database on SQL -->
-        <div class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
+        <article class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
             <h3 class="text-xl font-semibold mb-2">Company Database on SQL</h3>
             <p class="mb-4">Designed a comprehensive SQL database for managing company data, including employees, managers, branches, suppliers, clients, and sales information.</p>
             <!-- Placeholder for project image -->
 
-            <img src="../Assets/img/sql-stuff.jpg" alt="SQL Database Screenshot" class="project-image"/>
-        </div>
+            <img src="Assets/img/sql-stuff.jpg" alt="SQL Database Screenshot" class="project-image"/>
+        </article>
 
         <!-- Wordle Clone -->
-        <div class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
+        <article class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
             <h3 class="text-xl font-semibold mb-2">Wordle Clone</h3>
             <p class="mb-4">Developed a clone of the popular Wordle game using Python, focusing on algorithm efficiency and user interface design.</p>
             <!-- Placeholder for project image -->
 
-            <img src="../Assets/img/wordle-clone.png" alt="Wordle Clone Screenshot" class="project-image"/>
-        </div>
+            <img src="Assets/img/wordle-clone.png" alt="Wordle Clone Screenshot" class="project-image"/>
+        </article>
 
         <!-- Exercise Selection App -->
-        <div class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
+        <article class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
             <h3 class="text-xl font-semibold mb-2">Exercise Selection App</h3>
             <p class="mb-4">Created an exercise selection application using .NET MAUI, enabling users to customize and track their workout routines.</p>
             <!-- Placeholder for project image -->
 
-            <img src="../Assets/img/app.jpg" alt="Exercise App Screenshot" class="project-image"/>
-        </div>
+            <img src="Assets/img/app.jpg" alt="Exercise App Screenshot" class="project-image"/>
+        </article>
 
         <!-- Lottery Number Guessing Game -->
-        <div class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
+        <article class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
             <h3 class="text-xl font-semibold mb-2">Lottery Number Guessing Game</h3>
             <p class="mb-4">Programmed a lottery number guessing game in C#, incorporating statistical analysis and random number generation techniques.</p>
             <!-- Placeholder for project image -->
 
-            <img src="../Assets/img/lottery.png" alt="Lottery Game Screenshot" class="project-image"/>
-        </div>
+            <img src="Assets/img/lottery.png" alt="Lottery Game Screenshot" class="project-image"/>
+        </article>
     </div>
     <h2 class="text-2xl font-bold mt-12 mb-8 text-center bg-grey-blue rounded-lg p-2">Current Projects</h2>
 
     <!-- Projects in a grid layout -->
     <div class="grid md:grid-cols-2 gap-10">
         <!-- Project 1: Text-based Game in Python -->
-        <div class="border-2 rounded-lg p-4 shadow-lg">
+        <article class="border-2 rounded-lg p-4 shadow-lg">
             <h3 class="text-xl font-semibold mb-2">Text-based Game in Python</h3>
             <p class="mb-4">A narrative-driven game where players make choices that influence the story. Developed using Python, it showcases my skills in programming logic and storytelling.</p>
             <!-- Placeholder for game image or screenshot -->
 
-            <img src="../Assets/img/text-game.png" alt="Text-based Game Screenshot" class="project-image"/>
-        </div>
+            <img src="Assets/img/text-game.png" alt="Text-based Game Screenshot" class="project-image"/>
+        </article>
 
         <!-- Project 2: Portfolio Website -->
-        <div class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
+        <article class="border-2 border-teal-300 rounded-lg p-4 shadow-lg">
             <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
             <p class="mb-4">This website itself is a project, demonstrating my abilities in web development. It features a responsive design and is built with modern web technologies.</p>
             <!-- Placeholder for website image or screenshot -->
 
-            <img src="../Assets/img/web-portfolio.png" alt="Portfolio Website Screenshot" class="project-image"/>
-        </div>
+            <img src="Assets/img/web-portfolio.png" alt="Portfolio Website Screenshot" class="project-image"/>
+        </article>
     </div>
 
     <h2 class="text-2xl font-bold mt-12 mb-8 text-center text-teal bg-light-teal rounded-lg p-2">Future Projects</h2>
@@ -93,7 +99,7 @@
         <p class="mb-4">An ambitious project to develop an AI-driven tool that assists in code review by automatically identifying potential issues, suggesting improvements, and ensuring best coding practices. This tool aims to streamline the code review process and enhance code quality in software development projects.</p>
         <!-- Placeholder for future project image -->
 
-        <img src="../Assets/img/ai.jpg" alt="AI-Powered Code Review Assistant Concept" class="project-image"/>
+        <img src="Assets/img/ai.jpg" alt="AI-Powered Code Review Assistant Concept" class="project-image"/>
     </div>
 
     <!-- More Coming Soon -->
@@ -105,5 +111,6 @@
 <footer class="bg-black text-white p-4 text-center">
     <p>© 2023 Kento Pollard. All rights reserved.</p>
 </footer>
+<script src="Assets/js/menu-toggle.js"></script>
 </body>
 </html>
